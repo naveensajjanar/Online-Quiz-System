@@ -17,7 +17,8 @@ if(email!=null)
 </head>
 
 
-<body>
+<body style="background-image: url('1.jpeg'); 	background-repeat: no-repeat;
+	background-size: cover;">
 
     <script type="text/javascript">
         function check(){
@@ -39,7 +40,7 @@ if(email!=null)
     </script>
   <header>
     <jsp:include page="header.jsp"></jsp:include>        
-      
+
         <h1><a href="HomePage.jsp">Back</a></h1>
         </header>
     <div id="section"><div class="shadow p-3 mb-5 bg-body rounded"></div>
