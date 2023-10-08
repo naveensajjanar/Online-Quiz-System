@@ -1,14 +1,14 @@
-<%
+<%--<%
 String email=(String)session.getAttribute("email");
 if(email!=null){
     if(!email.equals("admin")){
-        response.sendRedirect("adminLogin.jsp");
+        response.sendRedirect("Alogin.jsp");
     }
 }
 else{
-    response.sendRedirect("adminLogin.jsp");
+    response.sendRedirect("Alogin.jsp");
 }
-%>
+--%>
 
 
 <html>
@@ -82,7 +82,9 @@ else{
                 <td><b>Set:</b></td>
                 <td>  <input type="radio" name="set" value="1" required> 1 &nbsp;
                 <input type="radio" name="set" value="2"> 2 &nbsp;
-                <input type="radio" name="set" value="3"> 3
+                <input type="radio" name="set" value="3"> 3 &nbsp;
+                 <input type="radio" name="set" value="4"> 4 &nbsp;
+                <input type="radio" name="set" value="5"> 5
                 </td>
                 </tr>
 

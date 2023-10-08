@@ -1,22 +1,22 @@
 <%@page import="com.AdminDAO"%>
 <%@page import="com.UserDAO"%>
 <%@page import="org.json.simple.JSONObject"%>
-<%
+<%--<%
 String email=(String)session.getAttribute("email");
 if(email!=null){
     if(!email.equals("admin")){
-        response.sendRedirect("adminLogin.jsp");
+        response.sendRedirect("Alogin.jsp");
     }
 }
 else{
-    response.sendRedirect("adminLogin.jsp");
+    response.sendRedirect("Alogin.jsp");
 }
-%>
+--%>
 
 
 <html>
 <head>
-<title>Code Warrior</title>
+<title>Eizitech Quiz</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>

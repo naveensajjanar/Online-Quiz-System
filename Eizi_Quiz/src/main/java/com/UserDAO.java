@@ -12,7 +12,7 @@ import java.util.Set;
 import org.json.simple.JSONObject;
 
 public class UserDAO {
-	public static String registerUser(String name,String email){
+	public static String registerUser(String name,String email,String mobile,String college,String qualification,String Stream,String percentage,String CLocation,String Address,String pincode,String passout){
 		String query="select * from "+DBDetails.USER_TABLE+" where "+DBDetails.EMAIL_COL+"=?";
 		
 		try{
@@ -27,17 +27,35 @@ public class UserDAO {
 				return "registered";
 			}
 			
-			query="insert into "+DBDetails.USER_TABLE+" ("+DBDetails.NAME_COL+","+DBDetails.EMAIL_COL+") values(?,?)";
+
+			
+			query="insert into "+DBDetails.USER_TABLE+" ("+DBDetails.NAME_COL
+					+","+DBDetails.EMAIL_COL+","+DBDetails.MOBILE_COL+","+DBDetails.COLLEGE_COL
+					+","+DBDetails.QUALIFICATION_COL+","+DBDetails.STREAM_COL
+					+","+DBDetails.PERCENTAGE_COL+","+DBDetails.CLOCATION_COL
+					+","+DBDetails.ADDRESS_COL+","+DBDetails.PINCODE_COL+","+DBDetails.PASSOUT_COL+") values(?,?,?,?,?,?,?,?,?,?,?)";
 			ps=con.prepareStatement(query,ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+		
+
 			ps.setString(1,name);
 			ps.setString(2,email);
-			
+			ps.setString(3,mobile);
+			ps.setString(4,college);
+			ps.setString(5,qualification);
+			ps.setString(6,Stream);
+			ps.setString(7,percentage);
+			ps.setString(8,CLocation);
+			ps.setString(9,Address);
+			ps.setString(10,pincode);
+			ps.setString(11,passout);
+
 			int result=ps.executeUpdate();
 			
 			ps.close();
 			con.close();
 			
-			if(result>0){
+			if(result>0)
+			{
 				return "true";
 			}
 			
@@ -144,10 +162,12 @@ public class UserDAO {
 		return id;
 	}
 	
-	public  String Login(String Username,String Password) throws SQLException 
+	public  String Login(String Username,String Password) throws SQLException, ClassNotFoundException 
 	{
 		String user="";
-		
+
+			
+
 		String query="select * from user where EMAIL='"+Username+"'";
 		
 		Connection con=DBConnect.getConnection();
@@ -161,6 +181,8 @@ public class UserDAO {
 			user = rs.getString(DBDetails.EMAIL_COL);
 		}
 		
+		
 		return user;
+
 	}
 }

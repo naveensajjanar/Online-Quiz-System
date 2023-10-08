@@ -14,7 +14,7 @@ Welcome to Einfachzauberer Technologies Private Limited</marquee>
     <div class="list">
         <ul>
      
-            <li><a href="adminLoginDAO.jsp">Admin Login</a></li>
+            <li><a href="Alogin.jsp">Admin Login</a></li>
             <li><a href="index.jsp">Candidate Login</a></li>
           
         </ul>
@@ -25,14 +25,13 @@ Welcome to Einfachzauberer Technologies Private Limited</marquee>
 <div id="tet">
 	<b style="font-size: 20px;">
 	
-	<h1 style="margin-left:30px; COLOR:#123456;">Developer</h1>
-	 <p>&nbsp &nbsp Einfachzauberer Technologies Private Limited is a fast growing, innovative 
-	  and vibrant software company.</p>
-	<p>&nbsp &nbsp &nbsp We provide process automation and management software that facilitates 
-	  products on multiple channels,different industries and large entities, while seamlessly 
-	  integrating with various solutions and eCommerce platforms.</p>
-	<p>&nbsp &nbsp &nbsp Einfachzauberer Technologies Private Limited has offices in Bangalore, 
-	Chennai, Hyderabad and Cochin and teams in various geographies as well.</p>
+	<h1 style="margin-left:30px; COLOR:#123456; text-decoration:underline;">Developer</h1>
+	 <div>&nbsp &nbsp &nbsp Einfachzauberer Technologies Private Limited is a fast growing, innovative 
+	  and vibrant software company.
+	 We provide process automation and management software that facilitates products on multiple channels,different industries and large entities, while seamlessly 
+	  integrating with various solutions and eCommerce platforms.
+	Einfachzauberer Technologies Private Limited has offices in Bangalore, 
+	Chennai, Hyderabad and Cochin and teams in various geographies as well.</div>
 
 </b>
 </div>
@@ -40,6 +39,8 @@ Welcome to Einfachzauberer Technologies Private Limited</marquee>
 
 
 </div>
+
+
 
 </body>
 <style>
@@ -72,7 +73,7 @@ border-radius: 20px;
 
     
     float:right;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-right: 10xp;
     margin-left: 30%;
 
@@ -81,7 +82,7 @@ border-radius: 20px;
 {
     margin-left: 25px;
     position:absolute ;
-    margin-top:5%;
+    margin-top:3%;
     max-width: 500px;
     width: 300px;
     height: 250px;
@@ -122,6 +123,13 @@ ul li a{
     transition: 0.6s ease;
     border-radius:10px;
 }
+#tet
+{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
 
 </style>
 </html>

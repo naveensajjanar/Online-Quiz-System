@@ -1,21 +1,22 @@
-<%@page import="org.json.simple.JSONObject"%>
-<%@page import="com.AdminDAO"%>
-<%@page import="org.json.simple.JSONArray"%>
 <%
 String email=(String)session.getAttribute("email");
 if(email!=null){
     if(!email.equals("admin")){
-        response.sendRedirect("adminLogin.jsp");
+        response.sendRedirect("Alogin.jsp");
     }
 }
 else{
-    response.sendRedirect("adminLogin.jsp");
+    response.sendRedirect("Alogin.jsp");
 }
 %>
+<%@page import="org.json.simple.JSONObject"%>
+<%@page import="com.AdminDAO"%>
+<%@page import="org.json.simple.JSONArray"%>
+ 
 
 <html>
 <head>
-<title>Code Warrior</title>
+<title></title>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -33,8 +34,8 @@ else{
                     <th>S.No.</th>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Points</th>    
-                    
+                    <th>Score</th>    
+                    <th></th>
                 </tr>
             
         <%
@@ -63,6 +64,10 @@ else{
                     <%=obj.get("points") %>
                     </td>
                     
+                     <td>
+                 <a href="CandidateDetails.jsp?Id=?">view</a>
+                    </td>
+                    
                 </tr>
                                 
         <%} %>
@@ -72,5 +77,6 @@ else{
     </div>
 
 </body>
+
 
 </html>

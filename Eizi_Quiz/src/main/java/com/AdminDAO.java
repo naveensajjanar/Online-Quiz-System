@@ -28,6 +28,11 @@ public class AdminDAO {
 			if(rs.next()){
 				return "true";
 			}
+			else if(rs.next())
+			
+			{
+				return "false";
+			}
 			
 			ps.close();
 			con.close();
@@ -331,4 +336,7 @@ public class AdminDAO {
 		
 		return false;
 	}
+	
+
+	
 }

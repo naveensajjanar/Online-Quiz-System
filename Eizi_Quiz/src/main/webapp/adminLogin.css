@@ -1,9 +1,10 @@
 @charset "UTF-8";
 #section
 {
-	
+	margin-top:10%;
 	margin-left:35%;
-width: 30%;
+
+   width: 30%;
 	border-radius: 15px;
 	 background-color:#eeeeee;
 	 box-shadow: 40px;

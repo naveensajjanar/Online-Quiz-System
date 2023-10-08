@@ -1,7 +1,7 @@
 <%@page import="org.json.simple.JSONObject"%>
 <%@page import="com.AdminDAO"%>
 <%@page import="org.json.simple.JSONArray"%>
-<%
+<%--<%
 String email=(String)session.getAttribute("email");
 if(email!=null){
     if(!email.equals("admin")){
@@ -11,11 +11,11 @@ if(email!=null){
 else{
     response.sendRedirect("adminLogin.jsp");
 }
-%>
+--%>
 
 <html>
 <head>
-<title>Code Warrior</title>
+<title>Filter Question</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>

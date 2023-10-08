@@ -1,7 +1,7 @@
 <%@page import="java.util.LinkedHashMap"%>
 <%@page import="com.UserDAO"%>
 <%@page import="com.AdminDAO"%>
-
+<%-- 
 <%
 String email=(String)session.getAttribute("email");
 if(email==null){
@@ -9,7 +9,7 @@ if(email==null){
 }
 
 %>
-
+--%>
 
 <html>
 <head>
@@ -24,9 +24,9 @@ if(email==null){
     <script type="text/javascript">
     var question_no=1;
     var question_id=0;
-    var max_questions=15;
+    var max_questions=30;
     
-    var timer=1200;
+    var timer=1800;
     var min=0;
     var sec=0;
     

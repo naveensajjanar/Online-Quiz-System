@@ -1,6 +1,14 @@
+
 <%@page import="com.UserDAO"%>
 <%@page import="com.AdminDAO"%>
 
+
+<%--<%
+String email=(String)session.getAttribute("email");
+if(email==null){
+    response.sendRedirect("index.jsp");
+}
+--%>
 
 <html>
 <head>
@@ -17,8 +25,8 @@
 
     <jsp:include page="header.jsp"></jsp:include>        
         <header>
-<li><a href="UserLogout.jsp">Logout</a></li>
-</header>
+ <li><a href="UserLogout.jsp">Logout</a></li>
+ </header>
     <div id="section">
     <h2>Test Finished:</h2>
     <ul>
@@ -28,7 +36,7 @@
     </ul>  
     
     <br/>
-    <h2>Happy Coding!! :) :)</h2>
+    <h2>Happy Coding!! -:) -:)</h2>
     </div>
     
 </body>
